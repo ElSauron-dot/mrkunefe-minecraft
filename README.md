@@ -1,2 +1,2 @@
 # mrkunefe-minecraft
-Oha yemi et
+Valla güzel oldu
