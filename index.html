@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>MrKunefe ile Minecraft</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    #splash img {
+      max-width: 90%;
+      height: auto;
+    }
+    #playButton {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #gameFrame {
+      width: 100%;
+      height: 100vh;
+      border: none;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="splash">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGghhmvOzsShL-N8no7xaZKYlOFDIcZdgIig&s" alt="Açılış Resmi">
+    <button id="playButton">MrKunefe ile Oyna</button>
+  </div>
+  <iframe id="gameFrame" src="eaglercraft.html"></iframe>
+
+  <script>
+    document.getElementById('playButton').addEventListener('click', function() {
+      document.getElementById('splash').style.display = 'none';
+      document.getElementById('gameFrame').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
